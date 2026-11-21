@@ -1,12 +1,24 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box; /* prevents elements from overflowing the width of their parent container (in this case the width of the browser window) */
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+body {
+    background-color: darkslategray;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 /* HEADER section */
 
 header {
     display: inline-block;
+    border-radius: 25px;
     width: 100%;
     text-align: center;
     background-color: black;
@@ -20,6 +32,8 @@ header a {
 
 #nav {
     display: inline-block;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     width: 100%;
     background-color: orangered;
     color: black;
@@ -37,6 +51,7 @@ header a {
 
 #nav a {
     display: inline-block;
+    border-radius: 25px;
     width: 33.3%;
     padding: 10px 0px 10px 0px;
     text-align: center;
@@ -45,14 +60,14 @@ header a {
 }
 
 #nav a:hover {
-    background-color: darkslategrey;
-    color: darkorange;
+    background-color: limegreen;
+    color: black;
 }
 
 /* MAIN (index.html) section */
 
 main {
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px 0px 0px;
     background-color: darkslategray;
     color: darkorange;
 }
@@ -73,6 +88,8 @@ main {
 }
 
 #home a {
+    border-radius: 25px;
+    margin-bottom: 10px;
     text-decoration: none;
     display: inline-block;
     width: 100%;
@@ -103,6 +120,8 @@ main {
 }
 
 .home-link-image {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
     background-color: orange;
     display: inline-block;
     width: 10%;
@@ -117,6 +136,7 @@ main {
 footer {
     margin: 0px 0px 10px 0px;
     display: inline-block;
+    border-radius: 25px;
     width: 100%;
     text-align: center;
     background-color: black;
