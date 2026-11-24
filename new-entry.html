@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/new-entry.css">
+    <title>CoD Multiplayer Local Stat Tracker</title>
+</head>
+<body>
+    
+    <header>
+        <a href="index.html"><h1>Call of Duty Multiplayer</h1></a>
+        <h2>Local & Family Stat Tracker</h2>
+        <div id="nav">
+            <ul>
+                <a href="new-entry.html">New</a>
+                <a href="saved-entries.html">Load</a>
+                <a href="records.html">Records</a>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="home">
+            <div id="intro">
+                <h3>NEW MATCH ENTRY</h3>
+                <p>So you have just finished an adrenaline-fueled Call of Duty multiplayer match? Enter your stats here and add them to the records of triumph...or shame.</p>
+                <p>The stats currently being recorded include:</p>
+                <ul>
+                    <li>Player</li>
+                    <li>Game</li>
+                    <li>Map</li>
+                    <li>Game Mode</li>
+                    <li>Score</li>
+                    <li>Eliminations/Kills</li>
+                    <li>Deaths</li>
+                    <li>K/D Ratio</li>
+                    <li>Win/Loss</li>
+                </ul>
+                <p>Once the stats are entered, press the "New Game" button. A draft copy of the results will be displayed for review. Once you are happy with the record, hit "Save Game" to enter the record into the database.</p>
+            </div>
+            <div id="new-entry-form-container">
+                <form id="new-entry-form" method="post">
+
+                    <div class="new-entry-form-element">
+                        <div class="element-flex">
+                            <label for="player">Player:</label>
+                            <select name="player" id="player">
+                                <option value="">Select Player</option>
+                                <option value="Keira">Keira</option>
+                                <option value="Quinn">Quinn</option>
+                                <option value="Mark">Mark</option>
+                                <option value="Lee">Lee</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="new-entry-form-element">
+                        <div class="element-flex">
+                            <label for="game">Game:</label>
+                            <select name="game" id="game">
+                                <option value="">Select Game</option>
+                                <option value="BO1">Black Ops 1</option>
+                                <option value="BO2">Black Ops 2</option>
+                                <option value="BO3">Black Ops 3</option>
+                                <option value="BO4">Black Ops 4</option>
+                                <option value="BOCW">Black Ops: Cold War</option>
+                                <option value="BO6">Black Ops 6</option>
+                                <option value="BO7">Black Ops 7</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="new-entry-form-element">
+                        <div class="element-flex">
+                            <label for="map">Map:</label>
+                            <input type="text" name="map" id="map">
+                        </div>
+                    </div>
+
+                    <div class="new-entry-form-element">
+                        <div class="element-flex">
+                            <label for="game-mode">Game Mode:</label>
+                            <input type="text" name="game-mode" id="game-mode">
+                        </div>
+                    </div>
+                    
+                    <div class="new-entry-form-element">
+                        <div class="element-flex">
+                            <label for="score">Score:</label>
+                            <input type="number" name="score" id="score">
+                        </div>
+                    </div>
+
+                    <div class="new-entry-form-element">
+                        <div class="element-flex">
+                            <label for="kills">Eliminations/Kills:</label>
+                            <input type="number" name="kills" id="kills">
+                        </div>
+                    </div>
+
+                    <div class="new-entry-form-element">
+                        <div class="element-flex">
+                            <label for="deaths">Deaths:</label>
+                            <input type="number" name="deaths" id="deaths">
+                        </div>
+                    </div>
+
+                    <div class="new-entry-form-element">
+                        <div class="element-flex">
+                            <label for="kd-ratio">K/D Ratio:</label>
+                            <input type="number" step="0.01" name="kd-ratio" id="kd-ratio">
+                        </div>
+                    </div>
+
+                    <div class="new-entry-form-element">
+                        <div class="element-flex">
+                            <label for="win-loss">Win/Loss:</label>
+                            <select name="win-loss" id="win-loss">
+                                <option value="">Select Result</option>
+                                <option value="win">Win</option>
+                                <option value="loss">Loss</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="new-entry-form-element">
+                        <button id="new-game-button" onclick="newGame()" type="button">New Game</button>
+                    </div>
+
+                </form>
+            </div>
+            <div id="entry-review">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h3>Created by Lee Gallagher Web Development - 2026</h3>
+    </footer>
+
+    <script src="main.js" defer></script>
+
+</body>
+</html>
