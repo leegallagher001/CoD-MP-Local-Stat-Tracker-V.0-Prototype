@@ -22,8 +22,10 @@ function newGame() {
     let newEntryDeaths = document.getElementById("deaths").value;
     let newEntryKDRatio = document.getElementById("kd-ratio").value;
     let newEntryWinLoss = document.getElementById("win-loss").value;
+
     // hide form elements
     newEntryFormContainer.style.display = 'none';
+
     // add styling to entry review
     const entryReview = document.getElementById("entry-review");
     entryReview.style.backgroundColor = "darkorange";
@@ -31,11 +33,13 @@ function newGame() {
     entryReview.style.display = "inline-block";
     entryReview.style.width = "100%";
     entryReview.style.borderRadius = "25px";
+    
     // display review message
     const reviewMessage = document.createElement("h4");
     reviewMessage.style.margin = "20px";
     reviewMessage.innerText = "Please Review New Game Entry Below:";
     entryReview.appendChild(reviewMessage);
+
     // display entered data
 
     // PLAYER
