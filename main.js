@@ -52,4 +52,58 @@ function newGame() {
     game.innerText = `Player: ${newEntryGame}`;
     entryReview.appendChild(game);
 
+    // MAP
+    const map = document.createElement("p");
+    map.innerText = `Map: ${newEntryMap}`;
+    entryReview.appendChild(map);
+
+    // GAME MODE
+    const gameMode = document.createElement("p");
+    gameMode.innerText = `Game Mode: ${newEntryGameMode}`;
+    entryReview.appendChild(gameMode);
+
+    // SCORE
+    const score = document.createElement("p");
+    score.innerText = `Score: ${newEntryScore}`;
+    entryReview.appendChild(score);
+
+    // KILLS/ELIMINATIONS
+    const kills = document.createElement("p");
+    kills.innerText = `Kills: ${newEntryKills}`;
+    entryReview.appendChild(kills);
+
+    // DEATHS
+    const deaths = document.createElement("p");
+    deaths.innerText = `Deaths: ${newEntryDeaths}`;
+    entryReview.appendChild(deaths);
+
+    // K/D RATION
+    const kdRatio = document.createElement("p");
+    kdRatio.innerText = `K/D Ratio: ${newEntryKDRatio}`;
+    entryReview.appendChild(kdRatio);
+
+    // WIN/LOSS
+    const winLoss = document.createElement("p");
+    winLoss.innerText = `Match Result: ${newEntryWinLoss}`;
+    entryReview.appendChild(winLoss);
+
+    // display save entry message
+    const saveMessage = document.createElement("h4");
+    saveMessage.style.marginLeft = "20px";
+    saveMessage.innerText = "Would You Like To Save Entry?";
+    entryReview.appendChild(saveMessage);
+
+    // buttons
+    const yesBtn = document.createElement("button");
+    yesBtn.style.marginLeft = "20px";
+    yesBtn.style.marginBottom = "20px";
+    yesBtn.innerText = "Yes";
+    entryReview.appendChild(yesBtn);
+
+    const noBtn = document.createElement("button");
+    noBtn.style.marginLeft = "20px";
+    noBtn.style.marginBottom = "20px";
+    noBtn.innerText = "No";
+    entryReview.appendChild(noBtn);
+
 }
